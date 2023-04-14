@@ -18,43 +18,43 @@
             background-color: $greyBlue
             position: relative
 
-            &--cutout
+            &__cutout
                 position: absolute
                 top: 0
                 right: 0
 
-            &--alzacik
+            &__alzacik
                 position: absolute
                 top: 24px
                 right: 15%
                 z-index: 1
 
-            &--caption
+            &__caption
                 width: 37%
                 margin-bottom: 80px
                 position: relative
                 z-index: 2
 
-                &--wrapper
+                &__wrapper
                     height: 125px
                     margin-bottom: 32px
 
-            &--table
+            &__table
                 text-align: center
                 position: relative
                 z-index: 1
 
-                h2.lpHdl__2
+                h2.lpHdl--2
                     margin-bottom: 40px
 
-                &--row
+                &__row
                     @include flexOr
                     justify-content: space-between
 
-                    h3.lpHdl__3
+                    h3.lpHdl--3
                         color: $blueMedia
 
-            &--revealer
+            &__revealer
                 display: flex
                 align-items: center
                 text-decoration: none
@@ -63,10 +63,10 @@
         &Articles
             @include container(64, 65, 64, 65)
 
-            h3.lpHdl__3
+            h3.lpHdl--3
                 margin-bottom: 32px
 
-            &--card
+            &__card
                 background-color: $white
                 border-radius: 8px
                 box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15)
@@ -82,13 +82,12 @@
                 &s
                     @include flexVert
                     gap: 20px
-                    margin-bottom: 20px
 
-                &--caption
+                &__caption
                     @include flexVert
                     justify-content: space-between
 
-                h4.lpHdl__4
+                h4.lpHdl--4
                     font-size: 16px
                     color: $blueArticle
                     margin-bottom: 16px
@@ -101,12 +100,12 @@
                     &:hover
                         color: $blueAlza
 
-                &--image
+                &__image
                     border-radius: 4px
                     object-fit: cover
                     object-position: left
 
-            &--link
+            &__link
                 margin: 48px auto 0 auto
                 display: block
                 width: 160px
@@ -123,15 +122,15 @@
             position: relative
             z-index: 2
 
-            h3.lpHdl__3
+            h3.lpHdl--3
                 margin-bottom: 32px
 
-            &--units
+            &__units
                 @include flexVert
                 gap: 8px
                 width: 100%
 
-            &--box 
+            &__box 
                 background-color: $white
                 border-radius: 4px
                 box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15)
@@ -142,16 +141,16 @@
                 &:hover
                     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2)
 
-                &--handle 
+                &__handle 
                     @include flexOr
                     gap: 16px
 
-                    h4.lpHdl__4
+                    h4.lpHdl--4
                         color: $grey6
                         background-color: $white
                         padding-bottom: 16px
 
-                &--content 
+                &__content 
                     padding: 0 36px
                     max-height: 0
                     overflow: hidden
@@ -159,34 +158,34 @@
                     transition: opacity 500ms, max-height 500ms, padding 500ms
                     opacity: 0
 
-                &__active 
-                    .lpArchive--box--content 
+                &--active 
+                    .lpArchive__box__content 
                         padding: 8px 36px 0
                         opacity: 1
 
-                    .lpArchive--box--icon
+                    .lpArchive__box__icon
                         transform: rotate(180deg)
 
-                &--icon
+                &__icon
                     width: 20px
                     min-width: 20px
                     height: 20px
                     transform: rotate(0deg)
                     transition: transform 500ms
 
-            &--list
+            &__list
                 list-style-type: none
                 @include flexVert
                 gap: 16px
 
-                a.lpText__S
+                a.lpText--S
                     font-weight: 500
                     color: $blueMedia
 
                     &:hover
                         color: $blueAlza
 
-            a.lpText__S.lpArchive--link
+            a.lpText--S.lpArchive__link
                 font-weight: 500
                 color: $grey5
                 display: block
@@ -201,14 +200,14 @@
             position: relative
             z-index: 2
 
-            &--caption
+            &__caption
                 margin: 0 165px 0 165px
 
-            h2.lpHdl__2
+            h2.lpHdl--2
                 padding-bottom: 32px
                 color: $blueAlza
 
-            p.lpText__M span
+            p.lpText--M span
                 font-weight: 500
 
         &Guide
@@ -224,21 +223,21 @@
                 color: $blueAlza
                 margin-top: 65px
 
-            &--cards
+            &__cards
                 @include container(64, 65, 64, 65)
                 @include flexOr
                 gap: 48px
 
-            &--card
+            &__card
                 flex: 1 1 200px
                 @include flexVert
                 align-items: center
                 gap: 16px
 
-                h4.lpHdl__4
+                h4.lpHdl--4
                     color: $blueMedia
 
-                p.lpText__S
+                p.lpText--S
                     @include roboto
 
                     a
@@ -247,7 +246,7 @@
                         &:hover
                             color: $blueMedia
 
-                &--num
+                &__num
                     @include type(14, 2.2, 500)
                     height: 30px
                     width: 30px
@@ -255,7 +254,7 @@
                     border-radius: 50%
                     color: $white
 
-            &--icon
+            &__icon
                 height: 64px
                 width: 64px
 
@@ -269,11 +268,11 @@
 .layout-0 #landingpage
     .lp
         &Header
-            &--alzacik
+            &__alzacik
                 right: 10%
 
         &Articles
-            &--card
+            &__card
                 gap: 5%
         
 @media only screen and (max-width: 1035px)
@@ -281,7 +280,7 @@
     .mobileapp #landingpage
         .lp
             &Articles
-                &--card
+                &__card
                     gap: 5%
 
 @media only screen and (max-width: 845px)
@@ -289,37 +288,37 @@
     .mobileapp #landingpage
         .lp
             &Header
-                &--alzacik
+                &__alzacik
                     right: 5%
                     top: 36px
                     width: 320px
 
-                &--caption
+                &__caption
                     width: 50%
 
-                    &--wrapper
+                    &__wrapper
                         height: unset
 
-                &--table
-                    &--row
+                &__table
+                    &__row
                         flex-wrap: wrap
                         gap: 24px
                         justify-content: center
 
-                    &--cell
+                    &__cell
                         width: calc((100% - 2 * 24px) / 3)
 
             &Articles
-                &--card
-                    &--image
+                &__card
+                    &__image
                         display: none
 
-            &Archive--box--content
+            &Archive__box__content
                 overflow-y: scroll
 
             &Guide
-                &--card
-                    &--headline
+                &__card
+                    &__headline
                         height: 40px
 
 @media only screen and (max-width: 665px)
@@ -327,36 +326,36 @@
     .mobileapp #landingpage
         .lp
             &Header
-                &--caption
+                &__caption
                     width: 75%
                     text-align: center
                     margin: 0 auto
                 
-                &--alzacik
+                &__alzacik
                     position: static
                     width: 75%
                     margin: 48px auto
 
-                &--cutout
+                &__cutout
                     max-width: 665px
 
             &Carousel
-                &--caption
+                &__caption
                     margin: 0 30px
 
-                    p.lpText__M:first-of-type
+                    p.lpText--M:first-of-type
                         margin-bottom: 16px
 
             &Guide
-                &--cards
+                &__cards
                     flex-direction: column
                     align-items: center
                     gap: 65px
 
-                &--card
+                &__card
                     max-width: 400px
 
-                    &--headline
+                    &__headline
                         height: unset
 
             &Header, &Articles, &Archive, &Guide
@@ -368,11 +367,11 @@
     .mobileapp #landingpage
         .lp
             &Header
-                &--table--cell
+                &__table__cell
                     width: calc((100% - 24px) / 2 )
 
             &Guide
-                &--cards
+                &__cards
                     @include container(65, 25, 65, 25)
 
             &Archive
@@ -383,12 +382,12 @@
     .mobileapp #landingpage
         .lp
             &Header
-                &--caption, &--alzacik
+                &__caption, &__alzacik
                     width: 100%
 
-                &--table--cell
+                &__table__cell
                     width: 100%
 
             &Archive
-                &--box--content
+                &__box__content
                     gap: 8px
