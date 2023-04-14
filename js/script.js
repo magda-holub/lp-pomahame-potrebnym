@@ -107,22 +107,22 @@ runCarousel();
 
 //dropdown
 function dropDown() {
-    let boxes = document.querySelectorAll(".lpArchive--box");
+    let boxes = document.querySelectorAll(".lpArchive__box");
 
     function openBox (box) {
-        let content = box.querySelector(".lpArchive--box--content");
-        box.classList.add("lpArchive--box__active");
+        let content = box.querySelector(".lpArchive__box__content");
+        box.classList.add("lpArchive__box--active");
         content.style.maxHeight = content.scrollHeight + 16 + "px";
     };
 
     function closeBox(box) {
-        let content = box.querySelector(".lpArchive--box--content");
-        box.classList.remove("lpArchive--box__active");
+        let content = box.querySelector(".lpArchive__box__content");
+        box.classList.remove("lpArchive__box--active");
         content.style.maxHeight = null;
     };
 
     boxes.forEach(function(box) {
-        let content = box.querySelector(".lpArchive--box--content");
+        let content = box.querySelector(".lpArchive__box__content");
 
         box.addEventListener('click', function() {
             if (content.style.maxHeight) {
@@ -146,7 +146,7 @@ function expander(button, section) {
 
     button.addEventListener('click', function handleClick() {
 
-        var content = section.querySelector('.lpExpander--content');
+        var content = section.querySelector('.lpExpander__content');
 
         button.classList.toggle('is-active');
         content.classList.toggle('is-visible');
