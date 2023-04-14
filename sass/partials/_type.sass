@@ -1,69 +1,69 @@
 #landingpage
-    h1.lpHdl__1
+    h1.lpHdl--1
         @include type(50, 1.25, 700)
         @include roboto
         color: $blueAlza
 
-    h2.lpHdl__2
+    h2.lpHdl--2
         @include type(30, 1.25, 700)
         @include roboto
         color: $blueAlza
 
-    h3.lpHdl__3
+    h3.lpHdl--3
         @include type(24, 1.25, 700)
         @include roboto
         color: $blueAlza
 
-    h4.lpHdl__4
+    h4.lpHdl--4
         @include type(14, 1.5, 500)
         @include roboto
         color: $blueAlza
 
-    p.lpText__L
+    p.lpText--L
         @include type(20, 1.5, 400)
 
-    p.lpText__M
+    p.lpText--M
         @include type(16, 1.5, 400)
 
-    p.lpText__S, a.lpText__S
+    p.lpText--S, a.lpText--S
         @include type(14, 1.5, 400)
 
 .layout-0 #landingpage
-    .lpHeader--table--row 
-        h3.lpHdl__3
+    .lpHeader__table__row 
+        h3.lpHdl--3
             @include type(20, 1.25, 700)
 
-        p.lpText__M
+        p.lpText--M
             @include type(14, 1.5, 400)
 
 
 @media only screen and (max-width: 1035px)
     .mobile #landingpage,
     .mobileapp #landingpage
-        .lpHeader--table--row 
-            h3.lpHdl__3
+        .lpHeader__table__row 
+            h3.lpHdl--3
                 @include type(20, 1.25, 700)
 
-            p.lpText__M
+            p.lpText--M
                 @include type(14, 1.5, 400)
 
 @media only screen and (max-width: 665px)
     .mobile #landingpage,
     .mobileapp #landingpage
-        h1.lpHdl__1
+        h1.lpHdl--1
             @include type(36, 1.25, 700)
 
-        h2.lpHdl__2
+        h2.lpHdl--2
             @include type(26, 1.25, 700)
     
-        h3.lpHdl__3
+        h3.lpHdl--3
             @include type(22, 1.25, 700)
 
-        p.lpText__L
+        p.lpText--L
             @include type(18, 1.5, 400)
 
 @media only screen and (max-width: 400px)
     .mobile #landingpage,
     .mobileapp #landingpage
-        p.lpText__S, a.lpText__S
+        p.lpText--S, a.lpText--S
             @include type(13, 1.5, 400)
