@@ -35,12 +35,11 @@
                     text-align: center
                     padding: 24px
                     @include flexVert
-                    gap: 12px
-                    justify-content: space-between
+                    justify-content: flex-start
                     text-decoration: none
 
                     p
-                        @include type(14px, 1.5, 500)
+                        @include type(14, 1.5, 500)
                         @include roboto
                         margin-top: unset
                         color: $grey6
@@ -50,14 +49,14 @@
                         margin-bottom: 12px
 
                     p.swiper-product-cprice
-                        @include type(14px, 1.5, 400)
+                        @include type(14, 1.5, 400)
 
                         &.noValue
                             display: none
 
                     p.swiper-product-price
                         color: $red
-                        @include type(14px, 1.5, 400)
+                        @include type(14, 1.5, 400)
                         margin-top: auto
 
                     &:hover
