@@ -698,7 +698,8 @@ button.swiper-pagination-bullet {
 .swiper-zoom-container > svg {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .swiper-slide-zoomed {
@@ -768,7 +769,6 @@ button.swiper-pagination-bullet {
 
 .swiper-container-cube .swiper-slide {
   pointer-events: none;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1;
   visibility: hidden;
@@ -803,7 +803,6 @@ button.swiper-pagination-bullet {
 .swiper-container-cube .swiper-slide-shadow-right,
 .swiper-container-cube .swiper-slide-shadow-top {
   z-index: 0;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -815,7 +814,6 @@ button.swiper-pagination-bullet {
   height: 100%;
   background: #000;
   opacity: 0.6;
-  -webkit-filter: blur(50px);
   filter: blur(50px);
   z-index: 0;
 }
@@ -826,7 +824,6 @@ button.swiper-pagination-bullet {
 
 .swiper-container-flip .swiper-slide {
   pointer-events: none;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1;
 }
@@ -845,7 +842,6 @@ button.swiper-pagination-bullet {
 .swiper-container-flip .swiper-slide-shadow-right,
 .swiper-container-flip .swiper-slide-shadow-top {
   z-index: 0;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -881,13 +877,12 @@ button.swiper-pagination-bullet {
   padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  justify-content: space-between;
+  justify-content: flex-start;
   text-decoration: none;
 }
 #landingpage .lpCarousel .swiper .swiper-slide p {
-  font-size: 14pxpx;
-  line-height: 21pxpx;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   margin-top: unset;
@@ -898,8 +893,8 @@ button.swiper-pagination-bullet {
   margin-bottom: 12px;
 }
 #landingpage .lpCarousel .swiper .swiper-slide p.swiper-product-cprice {
-  font-size: 14pxpx;
-  line-height: 21pxpx;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
 }
 #landingpage .lpCarousel .swiper .swiper-slide p.swiper-product-cprice.noValue {
@@ -907,8 +902,8 @@ button.swiper-pagination-bullet {
 }
 #landingpage .lpCarousel .swiper .swiper-slide p.swiper-product-price {
   color: #F00000;
-  font-size: 14pxpx;
-  line-height: 21pxpx;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
   margin-top: auto;
 }
@@ -1144,8 +1139,10 @@ button.swiper-pagination-bullet {
 }
 #landingpage .lpArticles__card__image {
   border-radius: 4px;
-  object-fit: cover;
-  object-position: left;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
 }
 #landingpage .lpArticles__link {
   margin: 48px auto 0 auto;
